@@ -1,0 +1,46 @@
+
+//  smaller3.cpp
+//  CSCI135
+//
+//  Created by Super Nova on 8/26/20.
+//  Copyright © 2020 Melissa Vento. All rights reserved.
+//
+
+
+/*
+Author: your name
+Course: CSCI-135
+Instructor: Melissa A Vento
+Assignment: Lab1B
+
+Write a program smaller3.cpp that asks the user to input three integer numbers, and prints out the smallest of the three.
+
+(Hint: There are many possible solutions here. One possible strategy: Given numbers x, y, and z, you can first compare x and y, take whichever is smaller and compare it with z.)
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int x, y, z;
+    int small;
+   
+    
+    cout << "Enter the first number: " << endl;
+    cin >> x;
+    
+    cout << "Enter the second number: " << endl;
+    cin >> y;
+    
+    cout << "Enter the third number: " << endl;
+    cin >> z;
+    
+    if (x < y)
+         small = x;
+     else
+         small = y;
+    
+    cout << "The smaller of the two is " << ((small < z) ? small : z) << "." << endl;
+
+}
