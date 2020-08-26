@@ -1,0 +1,47 @@
+ smaller.cpp
+//  CSCI135
+//
+//  Created by Super Nova on 8/26/20.
+//  Copyright © 2020 Melissa Vento. All rights reserved.
+//
+/*
+Author: your name
+Course: CSCI-136
+Instructor: Melissa A Vento
+Assignment: Lab1A
+
+Write a program smaller.cpp that asks the user to input two integer numbers and prints out the smaller of the two.
+*/
+
+#include <iostream>
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int a, b;
+    int small;
+   
+    
+    cout << "Enter the first number: " << endl;
+    cin >> a;
+    
+    cout << "Enter the second number: " << endl;
+    cin >> b;
+    
+    if (a < b)
+         small = a;
+     else
+         small = b;
+    
+    cout << "The smaller of the two is " << small  << "." << endl;
+
+}
+
+
+
+// $ ./smaller
+//Enter the first number: 15
+//Enter the second number: -24
+
+// The smaller of the two is -24
