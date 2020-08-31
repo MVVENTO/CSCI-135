@@ -1,0 +1,68 @@
+/*
+author: Melissa Vento
+Purpose: enter two ints, nd find out their quotient if the 
+denominator is zero),
+report error and stop the program early.
+
+Sample input/output:
+*/
+
+//multiple line comments starts /* and ends with */
+//And there can be several lines between /* and */
+//but // only works from the first letter after // to the end of that line.
+
+using namespace std; //; after this statemnet is needed.
+// anything after sing-line commenter to the end of the line
+//is treated as comments.
+
+
+cout << "Enter a numertor:"; //prompt user to enter a numerator
+//without the prompt, the code also works,
+// but there will be some problems,
+//the cursor is waiting there,
+//the code in 
+//int num;
+//cin >> num;
+//are waiting for input from keyboard,
+//but user does not know what to do without the prompt.
+//User-friendly.
+
+int num; //this line is like to register num as an int.
+//after this line, num has enough space to hold an int,
+//but what is the value of that int is unknown/unset yet,
+//it is like you are registering into a college,
+//once you get registered, you get a room.
+// but what is inside that room is not known yet.
+
+cin >> num; // >> is called pull operator.
+//it is like the system pulls an int from cin  (character input
+//or keyboard buffer) to variable num.
+
+count << "Enter a denominator:";
+int num2; // declare an int variable num2
+cint >> num2; // TODO, remmeber to declare int num2
+
+if (num2 == 0) // if num2 = 0 
+{
+cout << "denominator cannot be zero.";
+return 1; // when num2 is 0, there is no need to continue
+// we will stop running the rest code of main method
+// and return control to the caller of main method,
+// say, operating system.
+
+
+}
+
+//if we do not fall into the trap of 
+// (num2 == 0) and thus need to leave early,
+// num2 != 0, where != means not equal
+cout << "The quotient is"  << num / num2);
+//Interger division num / num2,
+//suppose num is 5 and num2 is 2,
+//then quotient is like to divide 5 pens
+//among two students, find out
+//how many pens each student gets.
+//a pen cannot be divided.
+
+return 0;
+}
